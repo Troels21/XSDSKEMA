@@ -27,9 +27,9 @@ Skema 2 bedre
         <xs:element maxOccurs="unbounded" name="aftale">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="CPR" type="xs:unsignedInt" />
-              <xs:element name="ID" type="xs:unsignedByte" />
-              <xs:element name="klinikID" type="xs:unsignedByte" />
+              <xs:element name="CPR" type="xs:string" />
+              <xs:element name="ID" type="xs:string" />
+              <xs:element name="klinikID" type="xs:string" />
               <xs:element name="notat" type="xs:string" />
               <xs:element name="timeEnd" type="xs:string" />
               <xs:element name="timeStart" type="xs:string" />
