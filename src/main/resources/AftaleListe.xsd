@@ -16,3 +16,27 @@
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
+
+Skema 2 bedre
+
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aftaleListe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="aftale">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CPR" type="xs:unsignedInt" />
+              <xs:element name="ID" type="xs:unsignedByte" />
+              <xs:element name="klinikID" type="xs:unsignedByte" />
+              <xs:element name="notat" type="xs:string" />
+              <xs:element name="timeEnd" type="xs:string" />
+              <xs:element name="timeStart" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
